@@ -1,0 +1,35 @@
+/******* Basic styling *********/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.main-content-section h3 {
+    padding-top: 10px;
+}
+
+.section-content {
+    background-color: #efe8c6;
+}
+
+.section-content > p {
+    padding: 10px;
+}
+
+/****** For small screens ******/
+
+@media (max-width: 767px){
+    .navbar-collapse {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #nav-menu-list {
+        background-color: #edf9bd;
+        font-size: 1.3em;
+        text-align: center;
+        margin-bottom: 0;
+        margin-top: 0; 
+    }
+}
