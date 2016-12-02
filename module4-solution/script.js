@@ -12,3 +12,7 @@
         }
     }
 })();
+
+var a = 3;
+var p = function pg() { return 5 * a; }();
+console.log(p); // 15 - we used closure here
