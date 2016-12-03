@@ -84,13 +84,13 @@ function buildAndShowHomeHTML (categories) {
       var homeHtmlToInsertIntoMainPage = insertProperty(
           homeHtml, 
           "randomCategoryShortName",
-          chosenCategoryShortName);
+          "'"+chosenCategoryShortName.short_name+"'");
       insertHtml("#main-content", homeHtmlToInsertIntoMainPage);
     },
     false); // False here because we are getting just regular HTML from the server, so no need to process JSON.
 }
 
-function chooseRandomCategory (categories) {
+function chooseRandomCategory(categories) {
   var randomArrayIndex = Math.floor(Math.random() * categories.length);
   return categories[randomArrayIndex];
 }
